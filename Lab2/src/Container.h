@@ -12,6 +12,7 @@ public:
 	virtual bool Contains(const T& )=0;
 	virtual T* Find(const T&)=0;
 	virtual void Remove(const T& )=0;
+	virtual ~Container(){}
 };
 
 #endif

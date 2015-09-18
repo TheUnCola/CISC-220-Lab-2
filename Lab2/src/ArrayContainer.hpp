@@ -6,10 +6,20 @@
 template<class T> class ArrayContainer:public Container<T>
 {
 public:
-	ArrayContainer(int size=DEFAULT_SIZE){}
+	ArrayContainer(int size=DEFAULT_SIZE){
+		//newArray = Array[size];
+		this->ArrayContainer() = Array[size];
+	}
 	~ArrayContainer(){}
 	void Clear(){}
-        int Size(){return 0;}
+        int Size(){
+        	int y;
+        	for(object x: this->ArrayContainer()){
+        		y++;
+        	}
+        	return y;
+        	//std::cout << y;
+        }
         bool Empty(){return true;}
         int MaxSize(){return 0;}
         void Insert(const T& item){}
